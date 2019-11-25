@@ -242,10 +242,9 @@ const Chatroom = function() {
   };
 };
 
-const brad = new User('Brad');
-const max = new User('Max');
-const ann = new User('Ann');
-
+const brad = new User("Brad");
+const max = new User("Max");
+const ann = new User("Ann");
 
 const chatroom = new Chatroom();
 
@@ -253,7 +252,6 @@ chatroom.register(brad);
 chatroom.register(max);
 chatroom.register(ann);
 
-brad.send('Hello Max', max);
-max.send('HI', ann);
-ann.send('HI');
-
+brad.send("Hello Max", max);
+max.send("HI", ann);
+ann.send("HI");
